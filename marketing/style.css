@@ -1,0 +1,261 @@
+
+:root {
+  --darkest-color: #000000;
+  --lightest-color: #0cd0cd;
+  --highlight-color: #ffffff;
+  --bright-color-1: #cf1596;
+  --bright-color-2: #76b6c4;
+  --bright-color-3: #7fcdff;
+  --bright-color-4: #6093d2;
+}
+
+body {
+  background: var(--darkest-color);
+  color: var(--lightest-color);
+  font-family: "Heebo", sans-serif;
+}
+@keyframes anim-stars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-150px);
+  }
+}
+.stars {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 0px 30px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 800px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 150px 100px white, 320px 100px white, 10px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 900px 100px white, 1000px 300px white, 1200px 30px white,
+    1300px 800px white, 100px 30px white, 200px 80px white, 300px 120px white,
+    400px 20px white, 5000px 130px white, 600px 50px white, 750px 100px white,
+    820px 100px white, 900px 30px white, 1000px 300px white, 500px -30px white,
+    150px 80px white, 200px 800px white, 350px 20px white, 450px 130px white,
+    550px 50px white, 650px 100px white, 720px 100px white, 850px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 900px 100px white, 1000px 300px white, 1200px 30px white,
+    1300px 800px white, 940px 800px white, 800px 808px white, 380px 420px white,
+    980px 320px white, 890px 650px white, 670px 950px white, 1000px 500px white,
+    620px 900px white, 1300px 730px white, 350px 700px white, -50px -30px white,
+    50px 780px white, 120px 800px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 150px 100px white, 320px 100px white, 10px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 780px 620px white, 850px 930px white,
+    800px 500px white, 440px 680px white, 930px 600px white, 100px 30px white,
+    100px 890px white, 40px 130px white, 270px 380px white, 380px 320px white,
+    800px 200px white, 230px 530px white, 450px 506px white, 550px 105px white,
+    420px 160px white, 240px 310px white, 800px 100px white, 300px 730px white,
+    250px 280px white, 900px 840px white, 650px 520px white, 950px 730px white,
+    650px 540px white, 630px 100px white, 720px 100px white, 850px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 900px 100px white, 1000px 300px white, 1200px 30px white,
+    1300px 800px white, 1120px 220px white, 1100px 300px white,
+    1070px 350px white, 1100px 720px white, 1150px 790px white,
+    1080px 830px white, 1010px 700px white, 1090px 500px white,
+    1070px 450px white, 1100px 50px white, 999px 172px white, 900px 230px white,
+    1110px 590px white, 700px 172px white, 1070px 150px white, 680px 250px white,
+    600px 180px white, 150px 250px white, -100px 180px white, -30px 120px white,
+    -100px 10px white, -90px 400px white, -50px 500px white, -30px 600px white,
+    -90px 680px white, -120px 800px white, -150px 800px white, -50px 820px white;
+  animation: anim-stars 10s linear infinite;
+}
+
+.stars::after {
+  content: " ";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 50px 30px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white;
+}
+
+.stars2 {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 0px 30px white, 100px 80px white, 80px 120px white,
+    300px 20px white, 250px 130px white, 200px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 800px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 150px 100px white, 320px 100px white, 10px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 900px 100px white, 1000px 300px white, 1200px 30px white,
+    1300px 800px white, 100px 30px white, 200px 80px white, 300px 120px white,
+    400px 20px white, 5000px 130px white, 600px 50px white, 750px 100px white,
+    820px 100px white, 900px 30px white, 1000px 300px white, 500px -30px white,
+    150px 80px white, 200px 800px white, 350px 20px white, 450px 130px white,
+    550px 50px white, 650px 100px white, 720px 100px white, 850px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 900px 100px white, 1000px 300px white, 1200px 30px white,
+    1300px 800px white, 940px 800px white, 800px 808px white, 380px 420px white,
+    980px 320px white, 890px 650px white, 670px 950px white, 1000px 500px white,
+    620px 900px white, 1300px 730px white, 350px 700px white, -50px -30px white,
+    50px 780px white, 120px 800px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 150px 100px white, 320px 100px white, 10px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 780px 620px white, 850px 930px white,
+    800px 500px white, 440px 680px white, 930px 600px white, 100px 30px white,
+    100px 890px white, 40px 130px white, 270px 380px white, 380px 320px white,
+    800px 200px white, 230px 530px white, 450px 506px white, 550px 105px white,
+    420px 160px white, 240px 310px white, 800px 100px white, 300px 730px white,
+    250px 280px white, 900px 840px white, 650px 520px white, 950px 730px white,
+    650px 540px white, 630px 100px white, 720px 100px white, 850px 30px white,
+    -50px 300px white, 600px 300px white, 1000px 80px white, -300px 120px white,
+    500px 20px white, 250px 130px white, 800px 50px white, 150px 100px white,
+    320px 100px white, 10px 30px white, -50px 300px white, -50px -30px white,
+    600px 80px white, 120px 00px white, 300px 20px white, 250px 130px white,
+    200px 50px white, 900px 100px white, 1000px 300px white, 1200px 30px white,
+    1300px 800px white, 400px 200px white, 283px 110px white, 40775px 30px white,
+    1200px 30px white;
+  animation: anim-stars 5s linear infinite;
+}
+
+.stars2::after {
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white, 125px 35px white, 50px 80px white,
+    10px 120px white, 275px 90px white, 230px 10px white, 120px 130px white,
+    300px 130px white, 220px 115px white;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circle-shape {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin-right: auto;
+  margin: 0px;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  font: inherit;
+}
+
+.ig-link {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.link-list-item {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin: 10px auto;
+  color: var(--highlight-color);
+  padding: 10px;
+  text-align: inherit;
+  transition: all 0.1s;
+  text-shadow: 1px 1px black !important;
+}
+
+.link-list-item-glow {
+  border: 1px solid #feef50;
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin: 10px auto;
+  color: var(--highlight-color);
+  padding: 10px;
+  text-align: inherit;
+  transition: all 0.1s;
+  text-shadow: 1px 1px black !important;
+}
+
+.link-list-item-glow:hover {
+  color: #ffffff;
+  background: #fff369;
+  box-shadow: 0 0 10px #f9e236, 0 0 40px #f9e236, 0 0 80px #f9e236;
+  border-color: #f9e236;
+  }
+
+.link-list-item-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.highlighted,
+.link-list-item:hover {
+  color: #ffffff;
+  background: #57fffc;
+  box-shadow: 0 0 10px #0cd0cd, 0 0 40px #0cd0cd, 0 0 80px #0cd0cd;
+  border-color: #0cd0cd;
+}
+
+a:hover {
+  color: #0cd0cd;
+  border-color: #0cd0cd;
+  text-shadow: 0 0 2em #0cd0cd;
+}
+
+.icon-list-img {
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+}
+
+.dark {
+  background: #000000;
+}
+
+.medium {
+  background: var(--bright-color-2);
+}
+
+.light {
+  background: var(--bright-color-3);
+}
+
+.bright {
+  background: var(--bright-color-4);
+}
